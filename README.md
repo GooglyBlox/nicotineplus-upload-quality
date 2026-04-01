@@ -32,6 +32,6 @@ That means Nicotine+ may freeze for minutes or longer while it catches up. That 
 
 ## Installing
 
-The intended install method is the zip from GitHub Releases. Then, extract it into your plugins folder.
+The intended install method is the zip from [GitHub Releases](https://github.com/GooglyBlox/nicotineplus-upload-quality/releases). Then, extract it into your plugins folder.
 
 Once it's installed, enable `Upload Quality`, open the uploads tab, and give it a moment. The plugin waits for the window to exist, patches the uploads view, and then starts filling in the new column.
