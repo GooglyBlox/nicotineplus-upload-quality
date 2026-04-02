@@ -41,6 +41,7 @@ SUPPORTED_EXTENSIONS = {
     ".alac",
 }
 
+
 class Plugin(BasePlugin):
     def __init__(self):
         super().__init__()
