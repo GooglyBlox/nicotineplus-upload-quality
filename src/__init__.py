@@ -84,8 +84,24 @@ class Plugin(BasePlugin):
         if self._install_scheduled:
             return
 
+        if self._is_column_installed():
+            return
+
         self._install_scheduled = True
         events.invoke_main_thread(self._install_column)
+
+    def _is_column_installed(self):
+        if self._widget is None:
+            return False
+
+        try:
+            for column in self._widget.get_columns():
+                if (column.get_title() or "") == "Quality":
+                    return True
+        except Exception:
+            return False
+
+        return False
 
     def _schedule_redraw(self):
         events.invoke_main_thread(self._redraw_tree)

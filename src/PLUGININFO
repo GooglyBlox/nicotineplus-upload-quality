@@ -1,5 +1,5 @@
 Name = "Upload Quality"
-Version = "2026-04-01r00"
+Version = "2026-04-18r00"
 Author = "GooglyBlox"
 Authors = ["GooglyBlox"]
 Description = "Adds a Quality column to uploads and shows bitrate or lossless audio format details for the files you are sharing."
